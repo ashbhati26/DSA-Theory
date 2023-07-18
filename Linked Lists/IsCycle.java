@@ -25,6 +25,17 @@ public class IsCycle {
         }
         return false;
     }
+
+    public static void removeCycle(){
+        // detect cycle
+        Node slow = head;
+        Node fast = head;
+        while(fast != null && fast.next != null){
+            
+        }
+        // find meeting point
+        // remove cycle -> last.next = null
+    }
     public static void main(String[] args) {
         head = new Node(1);
         head.next = new Node(2);
