@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class StackB {
+public class StackA {
     static class Stack{
         static ArrayList<Integer> list = new ArrayList<>();
         public static boolean isEmpty(){
@@ -12,12 +12,18 @@ public class StackB {
         }
         // pop
         public static int pop(){
+            if(isEmpty()){
+                return -1;
+            }
             int top = list.get(list.size() - 1);
             list.remove(list.size()-1);
             return top;
         }
         // peek
         public static int peek(){
+            if(isEmpty()){
+                return -1;
+            }
             return list.get(list.size() - 1);
         }
     }
