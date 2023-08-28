@@ -84,13 +84,13 @@ public class Trees {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes);
-        // System.out.println(root.data);
+        System.out.println(root.data);
 
-        // tree.preOrder(root);
+        tree.preOrder(root);
 
-        // tree.inOrder(root);
+        tree.inOrder(root);
 
-        // tree.postOrder(root);
+        tree.postOrder(root);
 
         tree.levelOrder(root);
     }
